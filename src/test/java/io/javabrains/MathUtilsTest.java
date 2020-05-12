@@ -8,8 +8,6 @@ class MathUtilsTest {
 
 	@Test
 	void test() {
-		//fail("Not yet implemented");
-		//System.out.println("Test ran successfully");
 		MathUtils mus = new MathUtils();
 		int expected = 2;
 		int actual = mus.add(1, 1);
@@ -20,7 +18,14 @@ class MathUtilsTest {
 	void testDivide() {
 		MathUtils mus = new MathUtils();
 		assertThrows(ArithmeticException.class, () -> mus.divide(1,0));
-		//assertThrows(NullPointerException.class, () -> mus.divide(1,0));
+	}
+	
+	@Test
+	void testMul() {
+		MathUtils mus = new MathUtils();
+		int expected = 21;
+		int actual = mus.multiply(3, 5);
+		assertEquals(expected, actual);
 	}
 
 }
