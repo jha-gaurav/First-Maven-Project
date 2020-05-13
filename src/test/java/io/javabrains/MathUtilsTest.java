@@ -23,7 +23,7 @@ class MathUtilsTest {
 	@Test
 	void testMul() {
 		MathUtils mus = new MathUtils();
-		int expected = 215;
+		int expected = 15;
 		int actual = mus.multiply(3, 5);
 		assertEquals(expected, actual);
 	}
